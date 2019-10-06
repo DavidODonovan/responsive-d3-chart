@@ -25,7 +25,7 @@ const App=()=>{
     if(players.length===11){
       setCut(players.splice(rand(1,5),rand(1,5)));
     } else {
-      cut.forEach((p)=>players.push(p))
+      cut.forEach((p)=>players.push(p));
     }
     let temp = players.map((d)=>createPlayer(d.id));
     shuffle(temp);
@@ -43,7 +43,7 @@ const App=()=>{
   return (
     <div className="myLayout">
       <div style={{gridArea: '1/2/2/4', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-      <button onClick={updatePlayers}>update players</button>
+        <button onClick={updatePlayers}>update players</button>
       </div>
       <div className="coolThing">
         <Provider>

@@ -8,7 +8,7 @@ const ReactNode = ({dims, data, mapping})=>{
   const [vizInitialized, setVizInitialized]= useState(false);
 
   useEffect(()=>{
-    createCanvas(()=>new ThePattern(domNode.current))
+    createCanvas(()=>new ThePattern(domNode.current));
   },[]);
 
   useEffect(()=>{
