@@ -19,9 +19,6 @@ class Circles {
       .attr('fill', 'orange')
       .attr('r', (d)=>d.ego)
 
-    this.allNodes.select('text')
-      .text((d)=>d.id)
-
     this.allNodes
       .transition().duration(1000)
       .attr('transform', (d)=>`translate(${this.scales.xScale(d.x)}, ${this.scales.yScale(d.y)})`)
@@ -46,6 +43,7 @@ class Circles {
     this.eachNode
       .append('text')
         .text((d)=>d.id)
+        .attr('fill', 'black')
         .attr('dx', -9)
         .attr('dy', 4)
 
