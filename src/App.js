@@ -9,7 +9,7 @@ const App=()=>{
   const [cut, setCut] = useState([]);
 
   const rand=(min,max)=>{
-    return (min+Math.round(Math.random()*max) );
+    return ( min+Math.round(Math.random()*max) );
   };
 
   const createPlayer=(id)=>{
@@ -53,6 +53,5 @@ const App=()=>{
     </div>
   );
 };
-
 
 export default App;
