@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import { withContext } from 'react-dims';
 import ThePattern from './d3Land/ThePattern';
 
-const ReactNode = ({dims, data, mapping})=>{
+const ReactNode = ({dims, data})=>{
   const domNode = useRef(null);
   const [canvas, createCanvas] = useState(null);
   const [vizInitialized, setVizInitialized]= useState(false);
