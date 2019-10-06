@@ -1,5 +1,5 @@
 import { select, selectAll } from 'd3-selection';
-import { transition } from 'd3-transition'
+import { transition } from 'd3-transition';
 
 class Circles {
   constructor(chart, data, scales){
