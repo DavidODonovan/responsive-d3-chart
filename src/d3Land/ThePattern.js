@@ -21,7 +21,7 @@ class ThePattern {
   updateDims=(newDims)=>{
     this.dims.setDims(newDims);
     this.scales.setScales(this.data, this.dims);
-    this.axes.updateAxes(this.scales, this.dims)
+    this.axes.updateAxes(this.scales, this.dims);
     this.circles.updateScales(this.scales);
   };
 
