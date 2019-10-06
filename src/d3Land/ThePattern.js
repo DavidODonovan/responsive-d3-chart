@@ -2,7 +2,7 @@ import { select } from 'd3-selection';
 import { Dimensions, Scales, Axes } from './utilities';
 import Circles from './Circles';
 
-class D3Nexus {
+class ThePattern {
    constructor(domNodeCurrent){
     this.svg = select(domNodeCurrent).append('svg');
     this.svg.attr('width', '100%').attr('height', '100%');
@@ -32,4 +32,4 @@ class D3Nexus {
 
 };
 
-export default D3Nexus;
+export default ThePattern;
